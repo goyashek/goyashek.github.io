@@ -141,7 +141,8 @@ h2 {
 }
 .stack-label {
   display: inline-block;
-  width: 90px;
+  min-width: 110px;
+  margin-right: 1.5rem;
   color: var(--frost);
 }
 
