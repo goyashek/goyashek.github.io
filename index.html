@@ -7,127 +7,91 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <span class="logo">ag</span>
-    <div class="nav-links">
-      <a href="#projects">projects</a>
-      <a href="#skills">skills</a>
-      <a href="#contact">contact</a>
-    </div>
-  </nav>
+  <main>
+    <pre class="ascii">
+ █████╗ ██████╗ ██╗  ██╗██╗███████╗██╗  ██╗███████╗██╗  ██╗
+██╔══██╗██╔══██╗██║  ██║██║██╔════╝██║  ██║██╔════╝██║ ██╔╝
+███████║██████╔╝███████║██║███████╗███████║█████╗  █████╔╝ 
+██╔══██║██╔══██╗██╔══██║██║╚════██║██╔══██║██╔══╝  ██╔═██╗ 
+██║  ██║██████╔╝██║  ██║██║███████║██║  ██║███████╗██║  ██╗
+╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+    </pre>
 
-  <section id="hero">
-    <p class="tag">IIT Delhi · AI & ML</p>
-    <h1>Abhishek Goyal</h1>
-    <p class="subtitle">I build ML systems that ship — from data to deployment.</p>
-    <div class="links">
-      <a href="https://github.com/goyashek" target="_blank">github</a>
-      <a href="https://linkedin.com/in/abhishek-goyal-246b30211" target="_blank">linkedin</a>
-      <a href="https://x.com/goyashek" target="_blank">x.com</a>
-    </div>
-  </section>
+    <p class="tagline"><strong>Machine Learning · NLP · CV</strong></p>
+    <p class="bio">msc math @ iit delhi · building models that ship</p>
+    <p class="links">
+      <a href="https://github.com/goyashek">github</a> ·
+      <a href="https://linkedin.com/in/abhishek-goyal-246b30211">linkedin</a> ·
+      <a href="https://x.com/goyashek">x.com</a>
+    </p>
 
-  <section id="projects">
-    <h2>projects</h2>
-    <div class="project-grid">
-      <article class="project-card">
-        <h3>✈️ Flight Delay Prediction</h3>
-        <p>End-to-end ML pipeline — 6 classifiers compared, XGBoost deployed. ROC-AUC: 0.7732</p>
-        <div class="project-tags">
-          <span>XGBoost</span><span>Streamlit</span><span>Feature Engineering</span>
-        </div>
-        <div class="project-links">
-          <a href="https://flight-delay-xgb.streamlit.app/" target="_blank">demo</a>
-          <a href="https://github.com/goyashek/Flight-Delay-Prediction" target="_blank">source</a>
-        </div>
-      </article>
-      <article class="project-card">
-        <h3>🛡️ Dark Pattern Detector</h3>
-        <p>Classifies UI text into 14 CCPA dark-pattern categories. XGBoost + Optuna, 22 NLP features.</p>
-        <div class="project-tags">
-          <span>NLP</span><span>Legal-tech</span><span>SMOTE</span>
-        </div>
-        <div class="project-links">
-          <a href="https://dark-patterns.streamlit.app/" target="_blank">demo</a>
-          <a href="https://github.com/goyashek/dark-pattern-final" target="_blank">source</a>
-        </div>
-      </article>
-      <article class="project-card">
-        <h3>💰 Tech Salary Advisor</h3>
-        <p>Indian tech salary predictor — 88K records, tuned XGBoost. R²: 0.867, MAE ~₹166K</p>
-        <div class="project-tags">
-          <span>XGBoost</span><span>EDA</span><span>Streamlit</span>
-        </div>
-        <div class="project-links">
-          <a href="https://tech-salary-advisor.streamlit.app/" target="_blank">demo</a>
-          <a href="https://github.com/goyashek/Tech-Salary-Advisor" target="_blank">source</a>
-        </div>
-      </article>
-      <article class="project-card">
-        <h3>📖 ML Cheat Sheet</h3>
-        <p>Interactive ML reference — 50+ techniques, decision wizard, pipeline checker. Zero dependencies.</p>
-        <div class="project-tags">
-          <span>HTML/CSS/JS</span><span>Education</span>
-        </div>
-        <div class="project-links">
-          <a href="https://goyashek.github.io/ml-cheat-sheet/" target="_blank">site</a>
-          <a href="https://github.com/goyashek/ml-cheat-sheet" target="_blank">source</a>
-        </div>
-      </article>
-      <article class="project-card">
-        <h3>🔤 NLP Companion</h3>
-        <p>16 NLP concept cards, decision wizard, pipeline diagnostic tool.</p>
-        <div class="project-tags">
-          <span>NLP</span><span>Interactive</span>
-        </div>
-        <div class="project-links">
-          <a href="https://goyashek.github.io/nlp-companion/" target="_blank">site</a>
-          <a href="https://github.com/goyashek/nlp-companion" target="_blank">source</a>
-        </div>
-      </article>
-      <article class="project-card">
-        <h3>📊 SVM Hands-On</h3>
-        <p>Pulsar star classification — 4 SVM kernels + GridSearchCV comparison.</p>
-        <div class="project-tags">
-          <span>SVM</span><span>scikit-learn</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/goyashek/svm-hands-on" target="_blank">source</a>
-        </div>
-      </article>
-    </div>
-  </section>
+    <ul class="about">
+      <li>building ML/NLP projects with scikit-learn, tensorflow, xgboost, nltk, spacy</li>
+      <li>interested in classical ML, NLP, model deployment and GenAI systems</li>
+      <li>currently strengthening DL + end-to-end ML engineering · exploring pytorch & llm workflows</li>
+    </ul>
 
-  <section id="skills">
-    <h2>skills</h2>
-    <div class="skill-groups">
-      <div class="skill-group">
-        <h4>ml / data</h4>
-        <p>Python · scikit-learn · XGBoost · Optuna · Pandas · NumPy · Seaborn · Matplotlib</p>
-      </div>
-      <div class="skill-group">
-        <h4>deploy</h4>
-        <p>Streamlit · GitHub Pages · Git</p>
-      </div>
-      <div class="skill-group">
-        <h4>web</h4>
-        <p>HTML · CSS · JavaScript</p>
-      </div>
-    </div>
-  </section>
+    <hr>
 
-  <section id="contact">
-    <h2>contact</h2>
-    <p>Open to ML collaborations and interesting projects.</p>
-    <div class="contact-links">
-      <a href="mailto:goyashek@gmail.com">email</a>
-      <a href="https://linkedin.com/in/abhishek-goyal-246b30211" target="_blank">linkedin</a>
-      <a href="https://x.com/goyashek" target="_blank">x.com</a>
-    </div>
-  </section>
+    <h2>selected projects</h2>
+    <table>
+      <thead>
+        <tr><th></th><th>project</th><th>what it does</th><th>links</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>🛡️</td>
+          <td><strong>dark-pattern-detector</strong></td>
+          <td>nlp compliance auditor · classifies UI text into 13 CCPA-illegal dark pattern categories · Optuna-tuned XGBoost with SMOTE + precision gate</td>
+          <td><a href="https://dark-patterns.streamlit.app/">demo</a> · <a href="https://github.com/goyashek/dark-pattern-detector">src</a></td>
+        </tr>
+        <tr>
+          <td>💰</td>
+          <td><strong>tech-salary-advisor</strong></td>
+          <td>indian tech salary predictor · XGBoost R² 0.867 on 88K records · quantifies city cost-of-living adjustments and per-skill salary premiums</td>
+          <td><a href="https://tech-salary-advisor.streamlit.app/">demo</a> · <a href="https://github.com/goyashek/Tech-Salary-Advisor">src</a></td>
+        </tr>
+        <tr>
+          <td>✈️</td>
+          <td><strong>flight-delay-prediction</strong></td>
+          <td>binary delay classifier · strict pre-departure feature set · 6 classifiers benchmarked, XGBoost deployed (ROC-AUC 0.773)</td>
+          <td><a href="https://flight-delay-xgb.streamlit.app/">demo</a> · <a href="https://github.com/goyashek/Flight-Delay-Prediction">src</a></td>
+        </tr>
+        <tr>
+          <td>📖</td>
+          <td><strong>ml-cheat-sheet</strong></td>
+          <td>50+ ml techniques with a decision wizard — pick the right model for any task · zero deps</td>
+          <td><a href="https://goyashek.github.io/ml-cheat-sheet/">site</a> · <a href="https://github.com/goyashek/ml-cheat-sheet">src</a></td>
+        </tr>
+        <tr>
+          <td>🔤</td>
+          <td><strong>nlp-companion</strong></td>
+          <td>nlp concepts with a pipeline diagnostic — built for quick reference</td>
+          <td><a href="https://goyashek.github.io/nlp-companion/">site</a> · <a href="https://github.com/goyashek/nlp-companion">src</a></td>
+        </tr>
+      </tbody>
+    </table>
 
-  <footer>
-    <p>© 2026 Abhishek Goyal</p>
-  </footer>
+    <hr>
+
+    <h2>stack</h2>
+    <pre class="stack">
+ml           scikit-learn · keras · nltk · xgboost · optuna 
+data/viz     pandas · numpy · matplotlib · seaborn   
+deploy       streamlit · github pages
+learning     pytorch · deep learning · llm/genai workflows
+    </pre>
+
+    <hr>
+
+    <div class="stats">
+      <img src="https://github-readme-stats.vercel.app/api?username=goyashek&show_icons=true&hide_border=true&title_color=88c0d0&icon_color=88c0d0&text_color=eceff4&bg_color=2e3440" height="150" alt="GitHub stats">
+      <img src="https://github-readme-streak-stats.herokuapp.com?user=goyashek&hide_border=true&ring=88c0d0&fire=88c0d0&currStreakLabel=88c0d0&sideLabels=eceff4&currStreakNum=eceff4&sideNums=eceff4&dates=d8dee9&background=2e3440" height="150" alt="GitHub streak">
+    </div>
+
+    <hr>
+
+    <footer>open to ml collaborations — reach out anytime</footer>
+  </main>
 </body>
 </html>
