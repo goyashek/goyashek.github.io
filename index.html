@@ -3,7 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhi Goyal</title>
+  <title>Abhishek Goyal | Machine Learning & NLP Engineer</title>
+  <meta name="description" content="Portfolio of Abhishek Goyal, MSc Mathematics student at IIT Delhi. Specialized in Machine Learning, NLP, Data Science, and building robust ML pipelines.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,73 +35,233 @@
     </div>
   </section>
 
- <section id="about">                                                                                                                                  
-      <h2>// about</h2>                                                                                                                                   
-      <ul>                                                                                                                                                
-        <li>building ML & NLP systems — bridging classical baselines (XGBoost/CatBoost) with deep metric learning and transformers</li>                  
-        <li>focused on model robustness: tuning with Optuna, auditing data leaks, and validating on unseen or real-world data</li>                        
-        <li>currently strengthening deep metric learning workflows and exploring PyTorch & LLM fine-tuning</li>                                           
-      </ul>                                                                                                                                               
-    </section>  
+  <section id="about">                                                                                                                                  
+    <h2>// about</h2>                                                                                                                                   
+    <ul>                                                                                                                                                
+      <li>building ML & NLP systems — bridging classical baselines (XGBoost/CatBoost) with deep metric learning and transformers</li>                  
+      <li>focused on model robustness: tuning with Optuna, auditing data leaks, and validating on unseen or real-world data</li>                        
+      <li>currently strengthening deep metric learning workflows and exploring PyTorch & LLM fine-tuning</li>                                           
+    </ul>                                                                                                                                               
+  </section>  
 
   <section id="projects">
     <h2>// selected projects</h2>
-    <div class="project-grid">
+    <div class="project-list">
+      
+      <!-- Project 1 -->
       <article class="project-card">
-        <span class="emoji">✍️</span>
-        <h3>signature-forgery-verification</h3>
-        <p>deep metric learning verifier · Siamese CNN & fine-tuned EfficientNet-B0 + online batch-hard mining (ROC-AUC 0.986) · uncovered & mitigated a systemic ICDAR data leak to build a writer-independent evaluation protocol</p>
-        <div class="project-links">
-          <a href="https://huggingface.co/spaces/goyashek/signature-forgery-verification" target="_blank">demo</a>
-          <a href="https://github.com/goyashek/Signature-forgery-verification" target="_blank">src</a>
+        <div class="project-banner">
+          <div class="project-banner-left">
+            <span class="emoji">✍️</span>
+            <h3>signature-forgery-verification</h3>
+          </div>
+          <div class="project-links">
+            <a href="https://huggingface.co/spaces/goyashek/signature-forgery-verification" target="_blank">demo ↗</a>
+            <a href="https://github.com/goyashek/Signature-forgery-verification" target="_blank">src ↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-metric-panel">
+            <div class="project-metric-item">
+              <span class="project-metric-label">Model Evaluation</span>
+              <span class="metric-badge">ROC-AUC 0.986</span>
+            </div>
+            <div class="project-metric-item">
+              <span class="project-metric-label">Cross-Dataset NFI</span>
+              <span class="metric-badge blue">ROC-AUC 0.877</span>
+            </div>
+          </div>
+          <div class="project-detail-panel">
+            <p>Deep metric learning verifier. Investigated and resolved a systemic data leak in the ICDAR writer-splitting protocol to establish writer-independent generalization on unseen signatures, utilizing online batch-hard mining.</p>
+            <div class="tech-tags">
+              <span class="tech-pill">Siamese CNN</span>
+              <span class="tech-pill">EfficientNet-B0</span>
+              <span class="tech-pill">Batch-Hard Mining</span>
+              <span class="tech-pill">PyTorch</span>
+              <span class="tech-pill">Gradio</span>
+            </div>
+          </div>
         </div>
       </article>
+
+      <!-- Project 2 -->
       <article class="project-card">
-        <span class="emoji">🛡️</span>
-        <h3>dark-pattern-detector</h3>
-        <p>nlp compliance auditor for India's 13 illegal CCPA categories · compares Optuna-tuned classical (XGBoost/SVC) baseline vs. fine-tuned DistilBERT (macro-F1 0.797) under skeleton-aware leak-free splitting</p>
-        <div class="project-links">
-          <a href="https://dark-patterns.streamlit.app/" target="_blank">classical-demo</a>
-          <a href="https://huggingface.co/spaces/goyashek/distilbert-darkpattern" target="_blank">transformer-demo</a>
-          <a href="https://github.com/goyashek/dark-pattern-detector" target="_blank">src</a>
+        <div class="project-banner">
+          <div class="project-banner-left">
+            <span class="emoji">🛡️</span>
+            <h3>dark-pattern-detector</h3>
+          </div>
+          <div class="project-links">
+            <a href="https://dark-patterns.streamlit.app/" target="_blank">classical-demo ↗</a>
+            <a href="https://huggingface.co/spaces/goyashek/distilbert-darkpattern" target="_blank">trans-demo ↗</a>
+            <a href="https://github.com/goyashek/dark-pattern-detector" target="_blank">src ↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-metric-panel">
+            <div class="project-metric-item">
+              <span class="project-metric-label">Transformer SOTA</span>
+              <span class="metric-badge">macro-F1 0.797</span>
+            </div>
+            <div class="project-metric-item">
+              <span class="project-metric-label">Compliance Scope</span>
+              <span class="metric-badge blue">14 CCPA Classes</span>
+            </div>
+          </div>
+          <div class="project-detail-panel">
+            <p>NLP compliance auditor for CCPA illegal guidelines. Maps UI copy into categories using an interpretable classical baseline (XGBoost/SVC + 22 handcrafted linguistic features) and a fine-tuned DistilBERT model, compared under skeleton-aware splitting.</p>
+            <div class="tech-tags">
+              <span class="tech-pill">DistilBERT</span>
+              <span class="tech-pill">XGBoost</span>
+              <span class="tech-pill">Optuna</span>
+              <span class="tech-pill">TextBlob Sentiment</span>
+              <span class="tech-pill">Streamlit</span>
+            </div>
+          </div>
         </div>
       </article>
+
+      <!-- Project 3 -->
       <article class="project-card">
-        <span class="emoji">💰</span>
-        <h3>tech-salary-advisor</h3>
-        <p>indian tech salary predictor · catBoost R² 0.8753 on 88K records · quantifies city cost-of-living adjustments and per-skill salary premiums</p>
-        <div class="project-links">
-          <a href="https://tech-salary-advisor.streamlit.app/" target="_blank">demo</a>
-          <a href="https://github.com/goyashek/Tech-Salary-Advisor" target="_blank">src</a>
+        <div class="project-banner">
+          <div class="project-banner-left">
+            <span class="emoji">💰</span>
+            <h3>tech-salary-advisor</h3>
+          </div>
+          <div class="project-links">
+            <a href="https://tech-salary-advisor.streamlit.app/" target="_blank">demo ↗</a>
+            <a href="https://github.com/goyashek/Tech-Salary-Advisor" target="_blank">src ↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-metric-panel">
+            <div class="project-metric-item">
+              <span class="project-metric-label">Best Fit (CatBoost)</span>
+              <span class="metric-badge">R² 0.8753</span>
+            </div>
+            <div class="project-metric-item">
+              <span class="project-metric-label">Mean Abs Error</span>
+              <span class="metric-badge blue">MAE ~₹1.60 LPA</span>
+            </div>
+          </div>
+          <div class="project-detail-panel">
+            <p>Indian tech salary predictor designed to learn pipeline containerization and reproducibility. Handles real-world data noise (missingness, normalization, outliers) and checks for feature prediction drift.</p>
+            <div class="tech-tags">
+              <span class="tech-pill">CatBoost</span>
+              <span class="tech-pill">MLflow</span>
+              <span class="tech-pill">DVC</span>
+              <span class="tech-pill">Docker</span>
+              <span class="tech-pill">GitHub Actions</span>
+              <span class="tech-pill">Streamlit</span>
+            </div>
+          </div>
         </div>
       </article>
+
+      <!-- Project 4 -->
       <article class="project-card">
-        <span class="emoji">✈️</span>
-        <h3>flight-delay-prediction</h3>
-        <p>binary delay classifier · strict pre-departure feature set · 6 classifiers benchmarked, XGBoost deployed (ROC-AUC 0.773)</p>
-        <div class="project-links">
-          <a href="https://flight-delay-xgb.streamlit.app/" target="_blank">demo</a>
-          <a href="https://github.com/goyashek/Flight-Delay-Prediction" target="_blank">src</a>
+        <div class="project-banner">
+          <div class="project-banner-left">
+            <span class="emoji">✈️</span>
+            <h3>flight-delay-prediction</h3>
+          </div>
+          <div class="project-links">
+            <a href="https://flight-delay-xgb.streamlit.app/" target="_blank">demo ↗</a>
+            <a href="https://github.com/goyashek/Flight-Delay-Prediction" target="_blank">src ↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-metric-panel">
+            <div class="project-metric-item">
+              <span class="project-metric-label">Deployed XGBoost</span>
+              <span class="metric-badge">ROC-AUC 0.7732</span>
+            </div>
+            <div class="project-metric-item">
+              <span class="project-metric-label">Neural Net SOTA</span>
+              <span class="metric-badge blue">Accuracy 0.7989</span>
+            </div>
+          </div>
+          <div class="project-detail-panel">
+            <p>US domestic flight delay classifier trained on information available strictly prior to takeoff. Compares 6 models (Logistic Regression, Random Forest, Neural Net, XGBoost) using leakage-free pipelines.</p>
+            <div class="tech-tags">
+              <span class="tech-pill">XGBoost</span>
+              <span class="tech-pill">PyTorch NN</span>
+              <span class="tech-pill">Cyclic Encoding</span>
+              <span class="tech-pill">Scikit-Learn</span>
+              <span class="tech-pill">Streamlit</span>
+            </div>
+          </div>
         </div>
       </article>
+
+      <!-- Project 5 -->
       <article class="project-card">
-        <span class="emoji">📖</span>
-        <h3>ml-cheat-sheet</h3>
-        <p>50+ ml techniques with a decision wizard — pick the right model for any task · zero deps</p>
-        <div class="project-links">
-          <a href="https://goyashek.github.io/ml-cheat-sheet/" target="_blank">site</a>
-          <a href="https://github.com/goyashek/ml-cheat-sheet" target="_blank">src</a>
+        <div class="project-banner">
+          <div class="project-banner-left">
+            <span class="emoji">📖</span>
+            <h3>ml-cheat-sheet</h3>
+          </div>
+          <div class="project-links">
+            <a href="https://goyashek.github.io/ml-cheat-sheet/" target="_blank">site ↗</a>
+            <a href="https://github.com/goyashek/ml-cheat-sheet" target="_blank">src ↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-metric-panel">
+            <div class="project-metric-item">
+              <span class="project-metric-label">Database Scope</span>
+              <span class="metric-badge">50+ Methods</span>
+            </div>
+            <div class="project-metric-item">
+              <span class="project-metric-label">Architecture</span>
+              <span class="metric-badge blue">Zero Deps</span>
+            </div>
+          </div>
+          <div class="project-detail-panel">
+            <p>Interactive web reference detailing 50+ machine learning techniques, featuring a vanilla JavaScript decision wizard to select the optimal model for any regression, classification, or cluster task.</p>
+            <div class="tech-tags">
+              <span class="tech-pill">Vanilla JS</span>
+              <span class="tech-pill">HTML5/CSS3</span>
+              <span class="tech-pill">Responsive Design</span>
+            </div>
+          </div>
         </div>
       </article>
+
+      <!-- Project 6 -->
       <article class="project-card">
-        <span class="emoji">🔤</span>
-        <h3>nlp-companion</h3>
-        <p>nlp concepts with a pipeline diagnostic — built for quick reference</p>
-        <div class="project-links">
-          <a href="https://goyashek.github.io/nlp-companion/" target="_blank">site</a>
-          <a href="https://github.com/goyashek/nlp-companion" target="_blank">src</a>
+        <div class="project-banner">
+          <div class="project-banner-left">
+            <span class="emoji">🔤</span>
+            <h3>nlp-companion</h3>
+          </div>
+          <div class="project-links">
+            <a href="https://goyashek.github.io/nlp-companion/" target="_blank">site ↗</a>
+            <a href="https://github.com/goyashek/nlp-companion" target="_blank">src ↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-metric-panel">
+            <div class="project-metric-item">
+              <span class="project-metric-label">Reference</span>
+              <span class="metric-badge">Core Concepts</span>
+            </div>
+            <div class="project-metric-item">
+              <span class="project-metric-label">Diagnostics</span>
+              <span class="metric-badge blue">Pipeline Quiz</span>
+            </div>
+          </div>
+          <div class="project-detail-panel">
+            <p>Interactive educational dashboard mapping out essential Natural Language Processing tasks from tokenizer splits to embedding vectors, complete with a diagnostic quiz.</p>
+            <div class="tech-tags">
+              <span class="tech-pill">NLP Pipelines</span>
+              <span class="tech-pill">NLTK / SpaCy</span>
+              <span class="tech-pill">Streamlit</span>
+            </div>
+          </div>
         </div>
       </article>
+
     </div>
   </section>
 
@@ -111,7 +278,8 @@
 
   <section id="stats">
     <div class="stats-row">
-      <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=goyashek&theme=nord_dark" height="150" alt="GitHub stats">
+      <!-- Upgraded to HTTPS to prevent mixed-content blocking -->
+      <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=goyashek&theme=nord_dark" height="150" alt="GitHub stats">
       <img src="https://github-readme-streak-stats.herokuapp.com?user=goyashek&hide_border=true&ring=88c0d0&fire=88c0d0&currStreakLabel=88c0d0&sideLabels=eceff4&currStreakNum=eceff4&sideNums=eceff4&dates=d8dee9&background=2e3440" height="150" alt="GitHub streak">
     </div>
   </section>
