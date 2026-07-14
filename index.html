@@ -53,46 +53,21 @@
       </div>
     </section>
 
-    <section class="split-section" id="education">
-  <div class="section-title">
-    <h2>Education</h2>
-    <span></span>
-  </div>
-  <div class="section-content detail-list">
-    
-    <!-- M.Sc. Entry -->
-    <article class="education-item">
-      <div class="degree-info">
-        <h3>M.Sc. in Mathematics</h3>
-        <p class="institution">Indian Institute of Technology Delhi</p>
-        <p class="achievement">JAM Mathematics AIR 202</p>
+    <section class="split-section" id="projects">
+      <div class="section-title"><h2>Projects</h2><span></span></div>
+      <div class="section-content project-list">
+        <article class="project-card"><a class="project-demo" href="https://huggingface.co/spaces/goyashek/signature-forgery-verification" target="_blank" rel="noreferrer" aria-label="Open Signature Forgery Verification demo"></a><div class="project-content"><span class="project-number">01 · Computer vision</span><h3>Signature forgery verification</h3><p>Deep metric-learning verifier for genuine versus forged signatures. I exposed two systemic data leaks in the ICDAR benchmark, then reached ROC-AUC 0.986 and cross-dataset AUC 0.877 with writer-independent evaluation.</p><div class="project-tags"><span>Siamese CNN</span><span>EfficientNet-B0</span><span>Batch-Hard Mining</span><span>PyTorch</span><span>Gradio</span></div></div><span class="project-open" aria-hidden="true">↗</span><a class="project-source" href="https://github.com/goyashek/Signature-forgery-verification" target="_blank" rel="noreferrer" aria-label="Open Signature Forgery Verification source"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.3 5.4 2.6 5.4 2.6a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></article>
+        <article class="project-card"><a class="project-demo" href="https://huggingface.co/spaces/goyashek/distilbert-darkpattern" target="_blank" rel="noreferrer" aria-label="Open Dark Pattern Detector demo"></a><div class="project-content"><span class="project-number">02 · Natural language</span><h3>Dark pattern detector</h3><p>NLP compliance auditor for 14 CCPA dark-pattern classes across a 6.7K-sample corpus. It compares a 22-feature baseline with fine-tuned DistilBERT under a skeleton-aware split.</p><div class="project-tags"><span>DistilBERT</span><span>XGBoost</span><span>Optuna</span><span>TextBlob</span><span>Streamlit</span></div></div><span class="project-open" aria-hidden="true">↗</span><a class="project-source" href="https://github.com/goyashek/dark-pattern-detector" target="_blank" rel="noreferrer" aria-label="Open Dark Pattern Detector source"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.3 5.4 2.6 5.4 2.6a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></article>
+        <article class="project-card"><a class="project-demo" href="https://tech-salary-advisor.streamlit.app/" target="_blank" rel="noreferrer" aria-label="Open Tech Salary Advisor demo"></a><div class="project-content"><span class="project-number">03 · Regression</span><h3>Tech salary advisor</h3><p>Indian tech-salary predictor built as a reproducible ML delivery project. It cleans 110K records and deploys tuned CatBoost with MAE around ₹1.60 LPA, tracked with MLflow, DVC, and Docker.</p><div class="project-tags"><span>CatBoost</span><span>MLflow</span><span>DVC</span><span>Docker</span><span>GitHub Actions</span><span>Streamlit</span></div></div><span class="project-open" aria-hidden="true">↗</span><a class="project-source" href="https://github.com/goyashek/Tech-Salary-Advisor" target="_blank" rel="noreferrer" aria-label="Open Tech Salary Advisor source"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.3 5.4 2.6 5.4 2.6a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></article>
+        <article class="project-card"><a class="project-demo" href="https://flight-delay-xgb.streamlit.app/" target="_blank" rel="noreferrer" aria-label="Open Flight Delay Prediction demo"></a><div class="project-content"><span class="project-number">04 · Classification</span><h3>Flight delay prediction</h3><p>US domestic-flight delay classifier restricted to information available before takeoff. It compares logistic regression, random forest, neural-network, and XGBoost baselines.</p><div class="project-tags"><span>XGBoost</span><span>PyTorch NN</span><span>Cyclic Encoding</span><span>scikit-learn</span><span>Streamlit</span></div></div><span class="project-open" aria-hidden="true">↗</span><a class="project-source" href="https://github.com/goyashek/Flight-Delay-Prediction" target="_blank" rel="noreferrer" aria-label="Open Flight Delay Prediction source"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.3 5.4 2.6 5.4 2.6a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></article>
       </div>
-      <div class="degree-meta">
-        <span class="performance">CGPA: 7.8</span>
-        <span class="timeline">2025 — Present</span>
-      </div>
-    </article>
-
-    <!-- B.Sc. Entry -->
-    <article class="education-item">
-      <div class="degree-info">
-        <h3>B.Sc. in Mathematics</h3>
-        <p class="institution">University of Rajasthan</p>
-      </div>
-      <div class="degree-meta">
-        <span class="performance">73%</span>
-        <span class="timeline">2022 — 2025</span>
-      </div>
-    </article>
-
-  </div>
-</section>
+    </section>
 
     <section class="split-section" id="education">
       <div class="section-title"><h2>Education</h2><span></span></div>
       <div class="section-content detail-list">
-        <article><div><h3>M.Sc. Mathematics</h3><p>Indian Institute of Technology Delhi</p></div><span>GPA 7.8<br>JAM Mathematics AIR 202 <br> <br> Ongoing ·</span></article>
-        <article><div><h3>B.Sc. Mathematics</h3><p>University of Rajasthan</p></div><span>73%<br><br> 2025</span></article>
+        <article><div><h3>M.Sc. Mathematics</h3><p>Indian Institute of Technology Delhi</p></div><span>Ongoing · GPA 7.8<br>JAM AIR 202</span></article>
+        <article><div><h3>B.Sc. Mathematics</h3><p>University of Rajasthan</p></div><span>2025 · 73%</span></article>
       </div>
     </section>
 
